@@ -27,5 +27,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
-          ssh-key: ${{ GITHUB_TOKEN }}
 
