@@ -13,10 +13,3 @@ jobs:
         with:
           node-version: '14'
           cache: yarn
-      - name: check
-        run: |
-          yarn check
-          yarn build
-
-      - env:
-        CI: true
