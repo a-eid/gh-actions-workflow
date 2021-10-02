@@ -14,8 +14,8 @@ jobs:
           node-version: '14'
           cache: yarn
       - runs: |
-        yarn &&
-        yarn check &&
+        yarn
+        yarn check
         yarn build
 
       - env:
