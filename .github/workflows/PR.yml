@@ -13,3 +13,6 @@ jobs:
         with:
           node-version: '14'
           cache: yarn
+      - run: |
+         yarn prettier && yarn lint
+         yarn build
