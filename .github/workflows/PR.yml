@@ -13,6 +13,3 @@ jobs:
         with:
           node-version: '14'
           cache: npm
-
-      - env:
-        CI: true
