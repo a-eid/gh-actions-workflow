@@ -1,0 +1,21 @@
+name: Check & Format PR
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: yarn
+      - runs: |
+        yarn check
+        yarn build
+
+      - env:
+        CI: true
